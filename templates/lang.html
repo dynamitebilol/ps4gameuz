@@ -1,0 +1,32 @@
+{% load static i18n %}
+<ul>
+<li><a href="#">{% trans "Languages" %}<span class="arrow_carrot-down"></span></a>
+<ul class="dropdown">
+    <li>
+        <form name="languageRu" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ redirect_to }}" />
+            <input name="language" type="hidden" value="ru" />
+            <a href="javascript:document.languageRu.submit()"><img width='16' height='12' src="{% static 'img/russian_flag.png' %}" alt='ru' /> Russian</a>
+        </form>                      
+        </li>
+
+        <li>
+            <form name="languageUz" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                <input name="language" type="hidden" value="uz" />
+                <a href="javascript:document.languageUz.submit()" ><img width='16' height='12' src="{% static 'img/uzbek_flag.jpg' %}" alt='it' /> Uzbek</a>
+            </form>                      
+        </li>
+
+        <li>
+            <form name="languageEn" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                <input name="language" type="hidden" value="en" />
+                <a href="javascript:document.languageEn.submit()" ><img width='16' height='12' src="{% static 'img/uk_flag.webp' %}" alt='en' /> English</a>
+            </form> 
+        </li>
+        
+        
+</ul>
+</li>
+</ul>

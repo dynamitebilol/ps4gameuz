@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-23 18:16+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\templates\categories.html:63 .\templates\games.html:68
+#: .\templates\home.html:77
+msgid "Categories"
+msgstr "Kategoriyalar"
+
+#: .\templates\footer.html:17 .\templates\navbar.html:18
+msgid "Homepage"
+msgstr "Bosh Sahifa"
+
+#: .\templates\footer.html:18 .\templates\navbar.html:19
+#: .\templates\single-game.html:12
+msgid "Games"
+msgstr "O'yinlar"
+
+#: .\templates\footer.html:19 .\templates\navbar.html:20
+msgid "Games List"
+msgstr "O'yinlar ro'yxati"
+
+#: .\templates\footer.html:20 .\templates\navbar.html:21
+msgid "Contacts"
+msgstr "Bog'lanish"
+
+#: .\templates\games.html:15
+msgid "GAMES"
+msgstr "O'YINLAR"
+
+#: .\templates\home.html:43
+msgid "Trending Now"
+msgstr "Hozirda trendda"
+
+#: .\templates\home.html:48
+msgid "View All"
+msgstr "Hammasi"
+
+#: .\templates\navbar.html:22
+msgid "Languages"
+msgstr "Tilni o'zgartirish"
+
+#: .\templates\navbar.html:71
+msgid "Search here....."
+msgstr "Qidirish....."
+
+#: .\templates\single-game.html:11
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\single-game.html:51
+msgid "Platforms"
+msgstr "Platforma"
+
+#: .\templates\single-game.html:52
+msgid "Date aired"
+msgstr "Yili"
+
+#: .\templates\single-game.html:53
+msgid "Version"
+msgstr "Versiya uchun"
+
+#: .\templates\single-game.html:54
+msgid "Category"
+msgstr "Kategoriya"
+
+#: .\templates\single-game.html:70
+msgid "Reviews"
+msgstr "Izohlar"
+
+#: .\templates\single-game.html:84
+msgid "No Reviews yet"
+msgstr "Izohlar yo'q..."
+
+#: .\templates\single-game.html:90 .\templates\single-game.html:100
+msgid "Your Comment"
+msgstr "Sizning izohingiz.."
+
+#: .\templates\single-game.html:95
+msgid "Name"
+msgstr "Ism"
+
+#: .\templates\single-game.html:96
+msgid "Your name"
+msgstr "Sizning ismingiz"
+
+#: .\templates\single-game.html:99 .\templates\single-game.html:101
+msgid "Review"
+msgstr "Izoh"

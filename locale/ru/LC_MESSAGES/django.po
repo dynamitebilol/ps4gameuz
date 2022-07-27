@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-23 18:16+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\templates\categories.html:63 .\templates\games.html:68
+#: .\templates\home.html:77
+msgid "Categories"
+msgstr "Категории"
+
+#: .\templates\footer.html:17 .\templates\navbar.html:18
+msgid "Homepage"
+msgstr "Главный"
+
+#: .\templates\footer.html:18 .\templates\navbar.html:19
+#: .\templates\single-game.html:12
+msgid "Games"
+msgstr "Игры"
+
+#: .\templates\footer.html:19 .\templates\navbar.html:20
+msgid "Games List"
+msgstr "Список игр"
+
+#: .\templates\footer.html:20 .\templates\navbar.html:21
+msgid "Contacts"
+msgstr "Контакты"
+
+#: .\templates\games.html:15
+msgid "GAMES"
+msgstr "ИГРЫ"
+
+#: .\templates\home.html:43
+msgid "Trending Now"
+msgstr "Актуальные"
+
+#: .\templates\home.html:48
+msgid "View All"
+msgstr "Посмотреть все"
+
+#: .\templates\navbar.html:22
+msgid "Languages"
+msgstr "Языки"
+
+#: .\templates\navbar.html:71
+msgid "Search here....."
+msgstr "Поищи здесь....."
+
+#: .\templates\single-game.html:11
+msgid "Home"
+msgstr "Главный"
+
+#: .\templates\single-game.html:51
+msgid "Platforms"
+msgstr "Платформы"
+
+#: .\templates\single-game.html:52
+msgid "Date aired"
+msgstr "Дата выхода"
+
+#: .\templates\single-game.html:53
+msgid "Version"
+msgstr "Версия"
+
+#: .\templates\single-game.html:54
+msgid "Category"
+msgstr "Категория"
+
+#: .\templates\single-game.html:70
+msgid "Reviews"
+msgstr "Отзывы"
+
+#: .\templates\single-game.html:84
+msgid "No Reviews yet"
+msgstr "Пока нет отзывов"
+
+#: .\templates\single-game.html:90 .\templates\single-game.html:100
+msgid "Your Comment"
+msgstr "Твой комментарий"
+
+#: .\templates\single-game.html:95
+msgid "Name"
+msgstr "Имя"
+
+#: .\templates\single-game.html:96
+msgid "Your name"
+msgstr "Ваше имя"
+
+#: .\templates\single-game.html:99 .\templates\single-game.html:101
+msgid "Review"
+msgstr "Отзыв"

@@ -1,0 +1,88 @@
+{% extends 'main.html' %}
+{% load i18n %}
+{% block content %}
+
+    <!-- Product Section Begin -->
+    <section class="product-page spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="product__page__content">
+                        <div class="product__page__title">
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-6">
+                                    <div class="section-title">
+                                        <h4>{{slug}}</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            {% for category_game in category_games  %}
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="product__item">
+                                    {% if category_game.image %}
+                                    <div class="product__item__pic set-bg" data-setbg="{{category_game.image.url}}" onclick="location.href='{% url 'game' category_game.slug %}'">
+                                        {% endif %}
+                                        <div class="comment"><i class="fa fa-comments"></i> {{category_game.review_set.all.count}}</div>
+                                    </div>
+                                    <div class="product__item__text">
+                                        <ul>
+
+                                            <li>{{category_game.category|upper}}</li>
+
+                                        </ul>
+                                        <h5><a href="{% url 'game' category_game.slug  %}">{{category_game.title}}</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+
+                        </div>
+                    </div>
+
+                    <div class="product__pagination">
+                        {% for page in custom_range %}
+                        {% if page == category_games.number%}
+                        <a href="?page={{page}}" data-page="{{page}}" class="current-page">{{page}}</a>
+                        {% else %}
+                        <a href="?page={{page}}" data-page="{{page}}" >{{page}}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% if category_games.has_next %}
+                        <a href="?page={{category_games.next_page_number}}"
+                        data-page="{{category_games.next_page_number}}"><i class="fa fa-angle-double-right"></i></a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="product__sidebar">
+                        <div class="product__sidebar__view">
+                            <div class="section-title">
+                                <h5>{% trans "Categories" %}</h5>
+                            </div>
+                            <div class="anime__details__widget">
+                                <div class="row">
+                                    {% for category in categories  %}
+                                    <div class="col-lg-6 col-md-6">
+                                        <ul>
+                                            <li><a href="{% url 'category' category.slug %}"> {{category.name|capfirst}}</a></li>
+                                        </ul>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                            {% include 'lang.html' %}
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Section End -->
+
+{% endblock content %}

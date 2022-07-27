@@ -1,0 +1,50 @@
+
+    {% load static i18n  %}
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="{% url 'home' %}">
+                            <img width='90' height='70' src="{% static 'img/ps4gamelogo.jpg' %}" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li class="active"><a href="{% url 'home' %}">{% trans "Homepage" %}</a></li>
+                                <li><a href="{% url 'games' %}">{% trans "Games" %}</a></li>
+                                <li><a href="{% static 'spiska.txt' %}">{% trans "Games List" %}</a></li>
+                                <li><a href="https://t.me/dynamitebilol">{% trans "Contacts" %}</a></li>
+                                
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="header__right">
+                        <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+      <!-- Search model Begin -->
+  <div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+            <input type="text" name='q' id="search-input" placeholder="{% trans "Search here....." %}">
+        </form>
+        
+    </div>
+</div>
+<!-- Search model end -->
